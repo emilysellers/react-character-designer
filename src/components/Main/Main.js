@@ -9,9 +9,13 @@ import Character from '../Character/Character';
 export default function Main() {
   return (
     <main>
-      <Selector />
-      <Counter />
-      <Character />
+      <div className="builder">
+        <Selector />
+        <Character />
+      </div>
+      <div>
+        <Counter />
+      </div>
     </main>
   );
 }
