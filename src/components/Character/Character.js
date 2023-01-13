@@ -1,11 +1,13 @@
-// import React from 'react';
+import React from 'react';
 
 import './Character.css';
 
-export default function Character() {
+export default function Character({ head }) {
   return (
     <div className="characterDisplay">
-      <div>head image</div>
+      <div>
+        <img src={`/${head}.png`} />
+      </div>
       <div>top image</div>
       <div>bottom image</div>
     </div>

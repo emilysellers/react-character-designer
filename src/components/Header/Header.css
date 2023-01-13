@@ -1,8 +1,9 @@
 header {
-  height: 40px;
-  background-color: var(--color2);
-  color: var(--color3);
+  height: auto;
+  background-color: black;
+  color: white;
   display: flex;
   align-items: center;
   padding-left: 20px;
+  font-size: 40px;
 }
