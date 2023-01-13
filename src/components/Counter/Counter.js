@@ -6,7 +6,7 @@ export default function Counter({ phrases }) {
   return (
     <div className="counterSection">
       <h2>Catchphrases:</h2>
-      <ul>
+      <ul className="phraseList">
         {phrases.map((c) => (
           <li key={c}>{c}</li>
         ))}

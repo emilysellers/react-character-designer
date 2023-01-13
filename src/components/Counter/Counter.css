@@ -1,4 +1,12 @@
 .counterSection {
-  border: 1px solid blue;
   padding: 10px;
+  border: 2px solid rgb(179, 179, 229);
+  background-color: white;
+  opacity: 90%;
+}
+
+.phraseList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

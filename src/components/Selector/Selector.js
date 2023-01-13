@@ -29,43 +29,45 @@ export default function Selector({
   return (
     <div className="form">
       <div>
-        <div className="selector">
+        <h2 className="selector">
           <label>Head</label>
           <select value={head} onChange={headHandler}>
             <option value="shark">shark</option>
             <option value="giraffe">giraffe</option>
             <option value="ostrich">ostrich</option>
           </select>
-        </div>
+        </h2>
       </div>
       <div>
-        <div className="selector">
+        <h2 className="selector">
           <label>Top</label>
           <select value={top} onChange={topHandler}>
             <option value="cozy">cozy</option>
             <option value="profesh">profesh</option>
             <option value="safety">safety</option>
           </select>
-        </div>
+        </h2>
       </div>
       <div>
-        <div className="selector">
+        <h2 className="selector">
           <label>Bottom</label>
           <select value={bottom} onChange={bottomHandler}>
             <option value="fancy">fancy</option>
             <option value="dancy">dancy</option>
             <option value="comfy">comfy</option>
           </select>
-        </div>
+        </h2>
       </div>
-      <div>
-        <label>Catchphrase:</label>
+      <div className="selector">
+        <h2>Catchphrase:</h2>
         <textarea
           value={inputValue}
           onChange={(event) => setInputValue(event.target.value)}
           placeholder="add a catchphrase!"
         ></textarea>
-        <button onClick={handleClick}>Add</button>
+        <div>
+          <button onClick={handleClick}>Add</button>
+        </div>
       </div>
     </div>
   );
