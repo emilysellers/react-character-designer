@@ -2,7 +2,7 @@ import React from 'react';
 
 import './Character.css';
 
-export default function Character({ head, top }) {
+export default function Character({ head, top, bottom }) {
   return (
     <div className="characterDisplay">
       <div>
@@ -11,7 +11,9 @@ export default function Character({ head, top }) {
       <div>
         <img src={`/${top}.png`} />
       </div>
-      <div>bottom image</div>
+      <div>
+        <img src={`/${bottom}.png`} />
+      </div>
     </div>
   );
 }

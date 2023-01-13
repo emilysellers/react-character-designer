@@ -1,11 +1,14 @@
 import './Selector.css';
 
-export default function Selector({ head, setHead, top, setTop }) {
+export default function Selector({ head, setHead, top, setTop, bottom, setBottom }) {
   const headHandler = (event) => {
     setHead(event.target.value);
   };
   const topHandler = (event) => {
     setTop(event.target.value);
+  };
+  const bottomHandler = (event) => {
+    setBottom(event.target.value);
   };
   return (
     <>
@@ -30,7 +33,16 @@ export default function Selector({ head, setHead, top, setTop }) {
             </select>
           </div>
         </div>
-        <div>Bottom selector</div>
+        <div>
+          <div className="selector">
+            <label>Bottom</label>
+            <select value={bottom} onChange={bottomHandler}>
+              <option value="fancy">fancy</option>
+              <option value="dancy">dancy</option>
+              <option value="comfy">comfy</option>
+            </select>
+          </div>
+        </div>
         <div>Quotes input</div>
       </div>
     </>

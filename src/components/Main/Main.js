@@ -9,11 +9,12 @@ import './Main.css';
 export default function Main() {
   const [head, setHead] = useState('');
   const [top, setTop] = useState('');
+  const [bottom, setBottom] = useState('');
   return (
     <main>
       <div className="builder">
-        <Selector {...{ head, setHead, top, setTop }} />
-        <Character {...{ head, top }} />
+        <Selector {...{ head, setHead, top, setTop, bottom, setBottom }} />
+        <Character {...{ head, top, bottom }} />
       </div>
       <div>
         <Counter />
