@@ -1,6 +1,15 @@
 import './Selector.css';
 
-export default function Selector({ head, setHead, top, setTop, bottom, setBottom }) {
+export default function Selector({
+  head,
+  setHead,
+  top,
+  setTop,
+  bottom,
+  setBottom,
+  phrase,
+  setPhrase,
+}) {
   const headHandler = (event) => {
     setHead(event.target.value);
   };
@@ -9,6 +18,9 @@ export default function Selector({ head, setHead, top, setTop, bottom, setBottom
   };
   const bottomHandler = (event) => {
     setBottom(event.target.value);
+  };
+  const phraseHandler = (event) => {
+    setPhrase(event.target.value);
   };
   return (
     <>
@@ -43,7 +55,14 @@ export default function Selector({ head, setHead, top, setTop, bottom, setBottom
             </select>
           </div>
         </div>
-        <div>Quotes input</div>
+        <div>
+          <label>Catchphrase:</label>
+          <textarea
+            value={phrase}
+            onChange={phraseHandler}
+            placeholder="add a catchphrase!"
+          ></textarea>
+        </div>
       </div>
     </>
   );

@@ -1,5 +1,10 @@
 import './Counter.css';
 
-export default function Counter() {
-  return <div className="counterSection">Counter and quotes section</div>;
+export default function Counter({ phrase }) {
+  return (
+    <div className="counterSection">
+      Catchphrases:
+      <p>{phrase}</p>
+    </div>
+  );
 }
