@@ -11,6 +11,8 @@ export default function Selector({
   setBottom,
   phrases,
   setPhrases,
+  headCount,
+  setHeadCount,
 }) {
   const [inputValue, setInputValue] = useState('');
   const handleClick = (event) => {
@@ -19,6 +21,7 @@ export default function Selector({
   };
   const headHandler = (event) => {
     setHead(event.target.value);
+    setHeadCount(headCount + 1);
   };
   const topHandler = (event) => {
     setTop(event.target.value);

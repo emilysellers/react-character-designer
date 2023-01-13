@@ -11,14 +11,28 @@ export default function Main() {
   const [top, setTop] = useState('cozy');
   const [bottom, setBottom] = useState('fancy');
   const [phrases, setPhrases] = useState([]);
+  const [headCount, setHeadCount] = useState(0);
   return (
     <main>
       <div className="builder">
-        <Selector {...{ head, setHead, top, setTop, bottom, setBottom, phrases, setPhrases }} />
+        <Selector
+          {...{
+            head,
+            setHead,
+            top,
+            setTop,
+            bottom,
+            setBottom,
+            phrases,
+            setPhrases,
+            headCount,
+            setHeadCount,
+          }}
+        />
         <Character {...{ head, top, bottom }} />
       </div>
       <div>
-        <Counter {...{ phrases }} />
+        <Counter {...{ phrases, headCount }} />
       </div>
     </main>
   );
