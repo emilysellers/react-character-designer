@@ -9,13 +9,12 @@ export default function Selector({
   setTop,
   bottom,
   setBottom,
-  phrases,
   setPhrases,
   headCount,
   setHeadCount,
 }) {
   const [inputValue, setInputValue] = useState('');
-  const handleClick = (event) => {
+  const handleClick = () => {
     setPhrases((currentState) => [...currentState, inputValue]);
     setInputValue('');
   };
