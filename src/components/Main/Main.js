@@ -7,18 +7,18 @@ import Character from '../Character/Character';
 import './Main.css';
 
 export default function Main() {
-  const [head, setHead] = useState('');
-  const [top, setTop] = useState('');
-  const [bottom, setBottom] = useState('');
-  const [phrase, setPhrase] = useState('');
+  const [head, setHead] = useState('giraffe');
+  const [top, setTop] = useState('cozy');
+  const [bottom, setBottom] = useState('fancy');
+  const [phrases, setPhrases] = useState([]);
   return (
     <main>
       <div className="builder">
-        <Selector {...{ head, setHead, top, setTop, bottom, setBottom, phrase, setPhrase }} />
+        <Selector {...{ head, setHead, top, setTop, bottom, setBottom, phrases, setPhrases }} />
         <Character {...{ head, top, bottom }} />
       </div>
       <div>
-        <Counter {...{ phrase }} />
+        <Counter {...{ phrases }} />
       </div>
     </main>
   );

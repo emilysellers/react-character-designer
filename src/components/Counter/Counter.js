@@ -1,10 +1,17 @@
+import React from 'react';
+
 import './Counter.css';
 
-export default function Counter({ phrase }) {
+export default function Counter({ phrases }) {
   return (
     <div className="counterSection">
-      Catchphrases:
-      <p>{phrase}</p>
+      <h2>Catchphrases:</h2>
+      <ul>
+        {phrases.map((c) => (
+          <li key={c}>{c}</li>
+        ))}
+      </ul>
+      <p>You have changed your buddy head X times, top X times and bottom X times. </p>
     </div>
   );
 }
