@@ -14,6 +14,8 @@ export default function Selector({
   setHeadCount,
   topCount,
   setTopCount,
+  bottomCount,
+  setBottomCount,
 }) {
   const [inputValue, setInputValue] = useState('');
   const handleClick = () => {
@@ -30,6 +32,7 @@ export default function Selector({
   };
   const bottomHandler = (event) => {
     setBottom(event.target.value);
+    setBottomCount(bottomCount + 1);
   };
   return (
     <div className="form">

@@ -13,6 +13,7 @@ export default function Main() {
   const [phrases, setPhrases] = useState([]);
   const [headCount, setHeadCount] = useState(0);
   const [topCount, setTopCount] = useState(0);
+  const [bottomCount, setBottomCount] = useState(0);
   return (
     <main>
       <div className="builder">
@@ -30,12 +31,14 @@ export default function Main() {
             setHeadCount,
             topCount,
             setTopCount,
+            bottomCount,
+            setBottomCount,
           }}
         />
         <Character {...{ head, top, bottom }} />
       </div>
       <div>
-        <Counter {...{ phrases, headCount, topCount }} />
+        <Counter {...{ phrases, headCount, topCount, bottomCount }} />
       </div>
     </main>
   );
