@@ -19,6 +19,9 @@ export default function Selector({
 }) {
   const [inputValue, setInputValue] = useState('');
   const handleClick = () => {
+    if (inputValue === '') {
+      alert('Please enter a catchphrase');
+    }
     setPhrases((currentState) => [...currentState, inputValue]);
     setInputValue('');
   };
@@ -39,7 +42,7 @@ export default function Selector({
       <div>
         <h2 className="selector">
           <label>Head</label>
-          <select value={head} onChange={headHandler}>
+          <select className="selector" value={head} onChange={headHandler}>
             <option value="shark">shark</option>
             <option value="giraffe">giraffe</option>
             <option value="ostrich">ostrich</option>
@@ -49,7 +52,7 @@ export default function Selector({
       <div>
         <h2 className="selector">
           <label>Top</label>
-          <select value={top} onChange={topHandler}>
+          <select className="selector" value={top} onChange={topHandler}>
             <option value="cozy">cozy</option>
             <option value="profesh">profesh</option>
             <option value="safety">safety</option>
@@ -59,7 +62,7 @@ export default function Selector({
       <div>
         <h2 className="selector">
           <label>Bottom</label>
-          <select value={bottom} onChange={bottomHandler}>
+          <select className="selector" value={bottom} onChange={bottomHandler}>
             <option value="fancy">fancy</option>
             <option value="dancy">dancy</option>
             <option value="comfy">comfy</option>
@@ -67,8 +70,9 @@ export default function Selector({
         </h2>
       </div>
       <div className="selector">
-        <h2>Catchphrase:</h2>
+        <label>Catchphrase:</label>
         <textarea
+          className="selector"
           value={inputValue}
           onChange={(event) => setInputValue(event.target.value)}
           placeholder="add a catchphrase!"
