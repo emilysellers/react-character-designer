@@ -21,9 +21,10 @@ export default function Selector({
   const handleClick = () => {
     if (inputValue === '') {
       alert('Please enter a catchphrase');
+    } else {
+      setPhrases((currentState) => [...currentState, inputValue]);
+      setInputValue('');
     }
-    setPhrases((currentState) => [...currentState, inputValue]);
-    setInputValue('');
   };
   const headHandler = (event) => {
     setHead(event.target.value);
