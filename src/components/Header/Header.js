@@ -2,5 +2,5 @@ import React from 'react';
 import './Header.css';
 
 export default function Header() {
-  return <header>build a buddy</header>;
+  return <header>build a buddy!</header>;
 }

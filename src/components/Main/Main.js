@@ -15,7 +15,7 @@ export default function Main() {
   const [topCount, setTopCount] = useState(0);
   const [bottomCount, setBottomCount] = useState(0);
   return (
-    <main>
+    <main className="mainContainer">
       <div className="builder">
         <Selector
           {...{
