@@ -69,7 +69,7 @@ export default function Selector({
           </select>
         </h2>
       </div>
-      <div className="selector">
+      <h2 className="selector">
         <label>Catchphrase:</label>
         <textarea
           className="selector"
@@ -80,7 +80,7 @@ export default function Selector({
         <div>
           <button onClick={handleClick}>Add</button>
         </div>
-      </div>
+      </h2>
     </div>
   );
 }
