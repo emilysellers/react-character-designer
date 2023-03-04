@@ -1,0 +1,12 @@
+header {
+  height: 95px;
+  background-color: rgb(33, 33, 33);
+  color: white;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  font-size: 50px;
+  font-weight: 600;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', Impact, Haettenschweiler,
+    'Arial Narrow Bold', sans-serif;
+}

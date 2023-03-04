@@ -1,0 +1,30 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  border: 4px solid rgb(179, 179, 229);
+  background-color: white;
+  opacity: 85%;
+  width: 220px;
+  margin: 20px;
+  padding: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', Impact, Haettenschweiler,
+    'Arial Narrow Bold', sans-serif;
+  font-size: 1.1em;
+}
+
+.selector {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', Impact, Haettenschweiler,
+    'Arial Narrow Bold', sans-serif;
+  font-size: 1.1em;
+}
+
+button {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', Impact, Haettenschweiler,
+    'Arial Narrow Bold', sans-serif;
+  font-size: 1.2em;
+}

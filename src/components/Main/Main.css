@@ -1,0 +1,15 @@
+main {
+  display: grid;
+  grid-template-columns: auto;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  margin: 10px;
+  width: 100%;
+}
+
+.builder {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

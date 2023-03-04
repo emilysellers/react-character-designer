@@ -1,0 +1,15 @@
+.characterDisplay {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 4px solid rgb(179, 179, 229);
+  background-color: white;
+  opacity: 85%;
+  width: 300px;
+  margin: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+img {
+  width: 200px;
+}
